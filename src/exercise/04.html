@@ -6,15 +6,22 @@
   <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
   <script type="text/babel">
-    const Message = ({ children }) => {
-      return <div className="message">{children}</div>
+    const Message = ({ subject, greeting }) => {
+      return <div className="message">{greeting}, {subject}</div>
+    }
+
+    // If you use Typescript then you probably don't need to write PropTypes
+    Message.propTypes = {
+      subject: PropTypes.string.isRequired,
+      subject: PropTypes.string.isRequired
     }
 
     const element = (
       <div className="container">
-        <Message>Hello World</Message>
-        <Message>Goodbye World</Message>
+        <Message greeting="Hello" subject="World" />
+        <Message greeting="Goodbye" subject="World" />
       </div>
     )
 
