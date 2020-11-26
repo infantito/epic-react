@@ -12,13 +12,6 @@
 
 <hr />
 
-<!-- prettier-ignore-start -->
-[![Build Status][build-badge]][build]
-[![GPL 3.0 License][license-badge]][license]
-[![All Contributors][all-contributors-badge]](#contributors-)
-[![Code of Conduct][coc-badge]][coc]
-<!-- prettier-ignore-end -->
-
 ## Prerequisites
 
 - Read through
